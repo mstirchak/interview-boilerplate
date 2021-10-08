@@ -7,9 +7,9 @@ describe('getKeysByOrder', function () {
   it('should return an empty array of an empty object', function () {
     const input: object = {};
     const orderedKeys: string[] = getKeysByOrder(input);
-    expect(orderedKeys).to.eq([]);
+    expect(orderedKeys).to.have.ordered.members([]);
   });
-  it('should return the keys correctly', function () {
+  it('should return the keys in correct order', function () {
     const input: object = exampleOrderedObject1;
     const orderedKeys: string[] = getKeysByOrder(input);
     expect(orderedKeys).to.have.ordered.members(['EE', 'ES', 'EC', 'FA']);
