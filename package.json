@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "mocha --config=test/.mocharc.json"
   },
-  "author": "",
+  "author": "Michael Stirchak",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.2.22",
